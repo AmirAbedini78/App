@@ -1,0 +1,536 @@
+.flexform-setup-panel-body_lhs .flexform_blocks_list a,
+.flexform-setup-block-list a{
+    color : #222;
+}
+
+.flexform-setup-panel-body_lhs .flexform_blocks_list .ff-each-block{
+    position: relative;
+    padding: 10px;
+}
+
+.flexform-setup-panel-body_lhs .flexform_blocks_list .ff-block-action{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    display: none;
+    transition: 400ms;
+}
+
+.flexform-setup-panel-body_lhs .flexform_blocks_list .ff-each-block:hover .ff-block-action{
+    display: block;
+    transition: 400ms;
+}
+
+.flexform-setup-panel-body_lhs .ff-each-block.active{
+    background-color: #fff;
+    border: 2px dotted #0a0a0a;
+}
+
+.flexform-setup-panel-body_middle{
+     min-height: 70vh;
+     padding : 23% 50px;
+    /*pointer-events: none;*/
+    /*disable text selection*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.flexform-setup-block-list__item a {
+    display: block;
+}
+.flexform-setup-block-list__item.active{
+    background-color: #f2f4f6;
+}
+
+.flexform-text-input{
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0 !important;
+    border-color: #0a0a0a !important;
+    box-shadow: none !important;
+}
+
+.flexform_blocks_list > :nth-child(15n + 1){
+    background-color: #DDA0DD;
+}
+
+.flexform_blocks_list > :nth-child(15n + 2){
+    background-color: #ADFF2F;
+}
+
+.flexform_blocks_list > :nth-child(15n + 3){
+    background-color: #87CEFA; /* Light Sky Blue */
+}
+
+.flexform_blocks_list > :nth-child(15n + 4){
+    background-color: #FFB6C1; /* Light Pink */
+}
+
+.flexform_blocks_list > :nth-child(15n + 5){
+    background-color: #FF69B4; /* Hot Pink */
+}
+
+.flexform_blocks_list > :nth-child(15n + 6){
+    background-color: #FFA07A; /* Light Salmon */
+}
+
+.flexform_blocks_list > :nth-child(15n + 7){
+    background-color: #98FB98; /* Pale Green */
+}
+
+.flexform_blocks_list > :nth-child(15n + 8){
+    background-color: #AFEEEE; /* Pale Turquoise */
+}
+
+.flexform_blocks_list > :nth-child(15n + 9){
+    background-color: #FFD700; /* Plum */
+}
+
+.flexform_blocks_list > :nth-child(15n + 10){
+    background-color: #EEE8AA; /* Pale Goldenrod */
+}
+
+.flexform_blocks_list > :nth-child(15n + 11){
+    background-color: #B0E0E6; /* Powder Blue */
+}
+
+.flexform_blocks_list > :nth-child(15n + 12){
+    background-color: #F08080; /* Light Coral */
+}
+
+.flexform_blocks_list > :nth-child(15n + 13){
+    background-color: #FA8072; /* Salmon */
+}
+
+.flexform_blocks_list > :nth-child(15n + 14){
+    background-color: #E6E6FA; /* Lavender */
+}
+
+.flexform_blocks_list > :nth-child(15n + 15){
+    background-color: #FFDEAD; /* Navajo White */
+}
+
+/** Style input fields */
+.ff-center-align,.ff-left-align{
+    display: inline;
+}
+.ff-center-align input,.ff-left-align input{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+/** Statement image upload sytles */
+.ff-statement-wrapper.center{
+    display: block;
+    margin:0 auto;
+    text-align: center;
+}
+.ff-statement-wrapper.center .ff-statement-image{
+    display: block;
+    margin:0 auto;
+}
+.ff-image-preview{
+    width: 200px;
+    height: 150px;
+    padding: 5px;
+    position:relative;
+}
+.ff-image-preview_remove_btn{
+    position: absolute;
+    top:0;
+    right: -40px;
+    z-index: 1;
+}
+.ff-image-preview img{
+    width: 100%;
+    height: 100%;
+}
+.ff-statement-image{
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+.ff-statement-image img{
+    max-width: 100%;
+    height: auto;
+}
+.ff-image-preview.hidden{
+    display: none;
+
+}
+
+.flexform-textarea{
+    min-height: 200px;
+}
+.flexform-title-preview{
+    color : #0a0a0a;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/** Style for the multiple fields */
+.ff-options-wrapper .option{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.ff-options-wrapper .option .option__input{
+    width: 90%;
+}
+
+/** Display choices options**/
+.ff-options-boxes .ff-option-box input{
+    display: none;
+}
+.ff-options-boxes .ff-option-box{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border: 1px solid #0a0a0a;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 200px;
+}
+.ff-options-boxes.horizontal .ff-option-box{
+    display: inline-block;
+}
+.ff-options-boxes.vertical{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.ff-options-boxes .ff-option-box label{
+    width: 90%;
+}
+.ff-options-boxes .ff-option-box input[type="checkbox"]:not(:checked)  ~  .ff-option-box_checked,
+.ff-options-boxes .ff-option-box input[type="radio"]:not(:checked)  ~  .ff-option-box_checked{
+    display: none;
+}
+/** show ff-option-box_checked when input is checked */
+.ff-options-boxes .ff-option-box input[type="checkbox"]:checked  ~  .ff-option-box_checked,
+.ff-options-boxes .ff-option-box input[type="radio"]:checked  ~  .ff-option-box_checked{
+    display: inline-block;
+    float: right;
+}
+@keyframes ffshake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.ff-shake {
+    animation: ffshake 0.5s;
+}
+
+/** Style for Star Rating */
+.flexform-rating__stars{
+    display: flex;
+}
+.flexform-rating__stars input[type="radio"]{
+    display: none;
+}
+.flexform-rating__stars label{
+    display: inline-block;
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+}
+.flexform-rating__stars label {
+    color: #ccc; /* Set color */
+    cursor: pointer;
+}
+
+.flexform-rating__stars label:hover,
+.flexform-rating__stars label.active-star{
+    color: #f8d32f; /* Set color */
+}
+
+/** opinion scale */
+.flexform-opinion-scale .label_wrapper{
+    display: block;
+    min-height: 20px;
+}
+.flexform-opinion-scale .flexform-opionion-scale_inner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.flexform-opionion-scale_inner input[type="radio"]{
+    display: none;
+}
+
+.flexform-opionion-scale_inner .flexform_opinion_scale_label{
+    font-size: 16px;
+    background-color: #f2f4f6;
+    color: #222;
+    padding: 10px 18px;
+    outline: none;
+    margin-right: 5px;
+    border: 1px solid #222;
+    transition: 400ms;
+}
+
+.flexform-opionion-scale_inner .flexform_opinion_scale_label:hover,
+.flexform-opionion-scale_inner .flexform_opinion_scale_label.active,
+.flexform-opionion-scale_inner input[type="radio"]:checked + .flexform_opinion_scale_label{
+    background-color: #222;
+    color: #fff;
+    outline: none;
+    transition: 400ms;
+}
+
+
+.ff-signature-wrapper{
+    border: dotted 2px #ccc;
+}
+
+.ff-submit-button{
+    font-size:18px;
+}
+
+/** Style for the Design and configuration section */
+.ff-section{
+    background-color: #f1f5f9;
+    padding : 5px 10px;
+    margin-bottom: 20px;
+}
+
+.ff-section_title{
+    font-size: 14px;
+}
+
+/** Style logic section */
+.flexform_block_logic_wrapper_each{
+    background-color: #f1f5f9;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.flexform_block_logic_wrapper_each .flexform-remove-logic-btn{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+    transition: 800ms;
+}
+
+.flexform_block_logic_wrapper_each:hover .flexform-remove-logic-btn{
+    display: block;
+    transition: 800ms;
+}
+
+.flexform-condition-wrapper_each{
+    margin-top: 10px;
+    border-top: 3px dotted #ccc;
+    padding-top: 20px;
+}
+/** hide the first .flexform_block_logic_wrapper_each button coditionr */
+.flexform-condition-wrapper_each:first-child{
+    border-top: 0 dotted #ccc;
+    padding-top: 5px;
+}
+.flexform-condition-wrapper_each:first-child .flexform-next-condition-wrapper{
+    display: none;
+}
+
+.block-logic-content .ff-each-block{
+    width: auto;
+    border: 1px solid #ccc;
+    pointer-events: none;
+    display: inline-block;
+}
+
+/** thank you spinner */
+.ff-thankyou-wrapper{
+    font-size: 1rem;
+}
+/* Define the animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply the animation to the spinner icon */
+.ff-thankyou-wrapper-redirect-block .fa-spinner {
+    animation: spin 2s linear infinite;
+    font-size: 30px;
+}
+
+/** Style for share form */
+.flexform-share-wrapper svg{
+    height: 50px;
+    max-width: 40px;
+}
+
+.flexform-share-wrapper .flexform-code-wrapper {
+    padding: 20px;
+    background-color: rgb(31 41 55);
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.flexform-share-wrapper .flexform-code-wrapper code{
+    color: #fff;
+    background-color: rgb(31 41 55);
+    overflow-wrap: break-word;
+}
+
+.flexform-share-wrapper .flexform-code-wrapper .ff-copy-code-btn {
+    position: absolute;
+    right: 10px;
+    color: #fff;
+}
+
+/** The client content */
+.flexform_client{
+    background-color: #fff;
+}
+.flexform-client-block-container{
+    justify-content: center;
+    align-items: center;
+    height:90vh;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 600px;
+    max-width: 70px;
+    background-color: #fff;
+    padding: 8% 20px;
+}
+
+.flexform-navigation .logo{
+    margin-top: 0;
+}
+
+.flexform-client-block-container .flexform-desc-preview {
+    font-size: 1rem;
+}
+
+.flexform-client-block-container .flexform-title-preview {
+    font-size: 1.5rem;
+}
+
+.flexform-client-block-container #dropzoneDragArea, .dropzoneDragArea {
+    background-color: #fff;
+    border: 1px dashed #93c5fd;
+    border-radius: 6px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.flexform-progress-bar{
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 0;
+}
+
+.flexform-footer-actions{
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+}
+/** Style for client dropzone
+ */
+
+.flexform-client-block-container .dz-preview{
+    max-width: 200px;
+    display: inline-block;
+    margin : 10px
+}
+
+.flexform-client-block-container .dropzone-previews {
+    /**overflow scroll y */
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.flexform-client-block-container .dz-success-mark,
+.flexform-client-block-container .dz-error-message,
+.flexform-client-block-container .dz-size,
+.flexform-client-block-container .dz-error-mark{
+    display: none;
+}
+
+#flexform-remove-files{
+    display: none;
+}
+
+.flexform-setup-block-list{
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+#flexformSubmissionAnswers{
+    padding : 20px;
+}
+
+.flexform-single-page-layout{
+    max-width: 800px;
+    margin : 10px auto;
+    border: 2px solid #f2f4f6;
+    border-radius: 5px;
+}
+
+.flexform-single-page-layout .flexform-single-page-each-block{
+    margin: 15px;
+}
+.flexform-single-page-layout .flexform-single-page-each-block.fsp-padding{
+    padding: 7px 20px;
+    background-color: #f2f4f6;
+}
+
+.flexform-single-page-layout .g-recaptcha>div{
+    margin: 0;
+}
+
+.fsp-hr{
+    border: 2px solid #f2f4f6;
+    margin: 20px 0;
+}
+
+.flexform-single-page-layout .ff-statement-image{
+    max-width: 800px;
+}
+
+.flexform-staff-forms-select{
+    max-width: 300px;
+}
+@media (max-width: 768px) {
+
+    .flexform-client-block-container{
+        min-width: 100%;
+        max-width: 100%;
+        background-color: #fff;
+        padding: 13% 10px;
+    }
+
+    .flexform-client-block-container .flexform-title-preview{
+        font-size: 1.2rem;
+    }
+
+    .flexform-client-block-container .flexform-desc-preview{
+        font-size: 14px;
+    }
+
+    .ff-submit-button{
+        font-size: 16px;
+    }
+}

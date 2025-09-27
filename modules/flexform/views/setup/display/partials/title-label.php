@@ -1,0 +1,1 @@
+<h3 class="flexform-title-preview tw-mb-4"> <?php echo $block['title'] ?> <?php echo ($block['required']) ? '<span class="text-danger">*</span>' : ''; ?></h3>
