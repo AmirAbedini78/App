@@ -1,0 +1,12 @@
+AddDefaultCharset utf-8
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# Redirect root to admin authentication
+RewriteRule ^$ /admin/authentication [R=302,L]
+
+RewriteCond $1 !^(index\.php|resources|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
+</IfModule>
